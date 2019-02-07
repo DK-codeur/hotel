@@ -1,0 +1,400 @@
+/*general*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: auto;
+    }
+
+.text-rouge
+    {
+        color: rgb(221, 63, 63);
+    }
+
+/*Navbar*/
+.navbar
+    {
+        width: 100%;
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+        /* background-color: rgb(241, 79, 79); */
+    }
+
+
+    .mot-menu
+    {
+        color: black;
+        position: absolute;
+        right: 50px;
+        margin-right: 15px;
+    }
+#my-navbar
+    {
+        justify-content: flex-end;
+        font-size: 18px;
+    }
+
+#my-navbar li
+    {
+        margin: auto 15px;
+    }
+
+#my-navbar li a
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(78, 75, 75)
+    }
+#my-navbar li a:hover
+    {
+        color: white;
+        transition: color .4s;
+    }
+
+.navbar .navbar-brand
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+    }
+
+.navbar-light .navbar-brand
+    {
+        color: white !important;
+    }
+
+.navbar .navbar-collapse
+    {
+        text-align: center;
+    }
+
+.navbar-toggler
+    {
+        border-style: none;
+        position: absolute;
+        right: 2%;
+        top: 15%;
+    }
+
+/*Cover*/
+#cover
+    {
+        height: 600px;
+        background: linear-gradient(120deg, rgba(65, 89, 208, 0.5) -10%, rgba(200, 80, 192, 0) 46%, rgba(255, 205, 112, 0.671) 110%),
+                    url(images/cover.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        margin-top: 60px;
+    }
+
+#cover h2
+    {
+        text-align: center;
+        color: white;
+        padding-top: 160px;
+        margin-bottom: 35px;
+        font-size: 55px;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px black;
+    }
+
+#cover button
+    {
+        position: absolute;
+        left: 50%;
+        background-color: rgb(241, 79, 79) !important;
+        font-size: 20px;
+        width: 220px;
+        margin-left: -110px;
+        height: 60px;
+        box-shadow: 8px 8px 5px rgb(29, 28, 28);
+    }
+
+    
+#cover button:hover
+    {
+        background-color: rgba(156, 54, 54, 0.97) !important;
+    }
+
+/*Hotel*/
+#hotel
+    {
+        padding: 40px 10px;
+    }
+
+#hotel h2
+    {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #444;
+        padding-top: 20px;
+    }
+
+#hotel p
+    {
+        font-size: 18px;
+        color: #444;
+        padding: 35px 10px;
+    }
+
+/*atouts*/
+#atouts
+    {
+        background: url("images/atout.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 70px 20px;
+    }
+
+/*Panel*/
+.panel
+    {
+        margin-bottom: 10px;
+    }
+
+.panel-heading
+    {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #ce5fb7;
+        color: white;
+    }
+
+.panel-body
+    {
+        background-color: rgba(252, 252, 252, 0.7);
+        padding: 15px;
+        text-align: center;
+    }
+
+/*Images-sejour*/
+#images-sejour
+    {
+        padding: 35px 10px;
+        /* transition: transform .5s; */
+    }
+
+#images-sejour h2
+    {
+        font-size: 35px;
+        margin-top: 40px;
+        text-align: right;
+        border-bottom: 2px #777 solid;
+        font-weight: bold;
+        color: #777;
+        line-height: 60px;
+    }
+
+.img-thumbnail
+    {
+        transition: transform .5s;
+    }
+
+.img-thumbnail:hover
+    {
+        transform: scale(1.1);
+    }
+.right
+    {
+        padding-top: 15px;
+        text-align: right;
+    }
+
+/*tarifs*/
+#tarifs
+    {
+        background-color: #dd7195;
+    }
+
+#tarifs .heading h2
+    {
+        display: inline-block;
+        width: 260px;
+        text-align: left;
+        color: white;
+        padding-top: 1%;
+        font-size: 2.4rem;
+        border-bottom: 2px white solid;       
+
+    }
+
+.tarifs-bloc
+    {
+        background-color: white;
+        margin: 20px 0px;
+        padding: 15px;
+        color: #777;
+        border-radius: 6px;
+        box-shadow: 4px 4px 8px #444;
+    }
+
+.tarifs-bloc h2
+    {
+        color: #444;
+        border-bottom: 1px #444 solid;
+    }
+
+.tarifs-bloc h3
+    {
+        color: #dd7195;
+    }
+
+/*Reserver*/
+.form1
+    {
+        /* margin: 50px auto; */
+        width: 75%;
+        margin: auto;
+        box-shadow: 3px 3px 3px 3px rgb(121, 113, 113);
+    }
+
+#reserver
+    {
+        background-color: #f5f5f5;
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+
+.form-group
+    {
+        padding: 5%;
+    }
+
+form h2
+    {
+        font-size: 45px;
+        text-align: center;
+        color: #dd7195;
+        padding-top: 10px;
+    }
+
+.divider
+    {
+        background-color: #C850C0;
+        width: 100px;
+        height: 2px;
+        margin: 10px auto;
+    }
+
+    /*barre*/
+#barre
+    {
+        background-color: rgb(241, 98, 98);
+        height: 100px;
+    }
+
+#barre img
+    {
+        position: absolute;
+        left: 50%;
+        margin-left: -110px;
+        margin-top: 27px;
+    }
+
+/* img-blanc*/
+
+#img-blanc
+    {
+        background-color: white;
+        height: 100px;
+    }
+
+#img-blanc img
+    {
+        position: absolute;
+        left: 50%;
+        margin-left: -110px;
+        margin-bottom: 20px;
+    }
+
+
+#barre h2
+    {
+        font-size: 30px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: white;
+    }
+
+    /*contact*/
+#contact
+    {
+        margin: 35px auto;
+    }
+
+#contact h2
+    {
+        text-align: right;
+        margin: 19px;
+        font-size: 2.6rem;
+        border-bottom: 2px rgb(241, 79, 79) solid;
+    }
+
+#contact p
+    {
+        text-align: right;
+        color: #444;
+        line-height: 40px;
+    }
+
+/*Footer*/
+footer
+    {
+        background-color: rgb(131, 130, 130);
+        padding: 30px;
+        text-align: center;
+    }
+
+footer h2
+    {
+        color: rgb(209, 204, 204);
+        font-weight: bold;
+    }
+
+footer p
+    {
+        color: white;
+    }
+
+/*@media*/
+
+@media screen and (max-width: 470px)
+    {
+        /*cover*/
+        #cover
+            {
+                height: 500px;
+
+            }
+
+        #cover h2
+            {
+                font-size: 43px;
+                padding-top: 100px;
+            }
+
+        /*barre rouge*/
+
+        #barre h2
+            {
+                font-size: 20px;
+            }
+
+        /*Form1*/
+
+        .form1
+            {
+                width: 100%;
+            }
+        
+    }
